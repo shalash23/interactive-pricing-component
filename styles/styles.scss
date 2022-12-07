@@ -8,43 +8,62 @@
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
+  //   outline: 2px solid green;
 }
 
 body {
   min-height: 100vh;
+  width: auto;
   background-color: $veryPaleBlue;
+  background-image: url("../images/bg-pattern.svg");
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  //   background-attachment: fixed;
 }
 
 // Global
 
 h1 {
+  //   font-size: 1.5rem;
+  //   font-size: clamp(1.5rem, 1.3233082706766917rem + 0.7518796992481203vw, 2rem);
+  //   font-size: 1.2rem;
+  //   font-size: clamp(
+  //     1.2rem,
+  //     1.0586466165413533rem + 0.6015037593984964vw,
+  //     1.6rem
+  //   );
+  //   font-size: 1.4rem;
+  //   font-size: clamp(
+  //     1.4rem,
+  //     1.3293233082706766rem + 0.3007518796992484vw,
+  //     1.6rem
+  //   );
   font-size: 1.5rem;
-  font-size: clamp(1.5rem, 1.3233082706766917rem + 0.7518796992481203vw, 2rem);
+  font-size: clamp(1.5rem, 1.393984962406015rem + 0.4511278195488722vw, 1.8rem);
+  font-stretch: expanded;
+  color: $desaturabtedBlue;
 }
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-size: clamp(
-    1.3rem,
-    1.1233082706766917rem + 0.7518796992481203vw,
-    1.8rem
+    1.15rem,
+    1.0793233082706766rem + 0.3007518796992484vw,
+    1.35rem
   );
 }
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-size: clamp(
-    1.2rem,
-    1.0586466165413533rem + 0.6015037593984964vw,
-    1.6rem
+    1.1rem,
+    1.0293233082706768rem + 0.30075187969924805vw,
+    1.3rem
   );
 }
 
 p {
-  font-size: 0.95rem;
-  font-size: clamp(
-    0.95rem,
-    0.801578947368421rem + 0.6315789473684212vw,
-    1.37rem
-  );
+  font-size: 0.94rem;
+  font-size: clamp(0.94rem, 0.918796992481203rem + 0.09022556390977451vw, 1rem);
+  color: $grayishBlue;
 }
 
 // Foooter

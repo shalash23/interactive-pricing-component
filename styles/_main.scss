@@ -1,4 +1,39 @@
+// @import "./mixins";
+
 main {
-  min-height: 100vh;
-  background-image: url("../images/bg-pattern.svg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .heading {
+    padding: 1em;
+    margin-top: 3em;
+    background-image: url("../images/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: fit-content;
+    h1 {
+      margin-bottom: 0.25em;
+      font-weight: 700;
+      text-align: center;
+    }
+    p {
+      //   font-stretch: extra-condensed;
+      text-align: center;
+      //   word-wrap: break-word;
+      width: min(70%, 100%);
+      margin: auto;
+    }
+    @include media(670px) {
+      p {
+        width: auto;
+      }
+    }
+  }
+}
+
+section {
+  //   padding: 15em;
+  background-color: $desaturabtedBlue;
 }
