@@ -1,0 +1,55 @@
+section {
+  //   padding: 15em 5em;
+  width: 100%;
+  height: auto;
+  margin-top: 3.5em;
+  border-radius: 12px;
+  box-shadow: 0.25px 0.25px 4px rgba(63, 63, 63, 0.39);
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3em;
+
+  p {
+    text-transform: uppercase;
+  }
+
+  .wrap {
+    display: flex;
+    h2 {
+      font-size: 2.2rem;
+      //   color: hsl(227, 53%, 34%);
+      color: $desaturabtedBlue;
+      font-weight: 700;
+    }
+    span {
+      margin-left: 1em;
+      align-self: center;
+      color: $grayishBlue;
+      font-size: 1.1rem;
+    }
+  }
+
+  .subscription-plan {
+    display: flex;
+    padding: 2em 0;
+    p {
+      font-size: 0.87rem;
+    }
+    i {
+      //   padding: 2em;
+      align-self: center;
+      margin-left: 0.2em;
+      margin-right: 0.2em;
+      cursor: pointer;
+      color: $grayishBlue;
+    }
+    span {
+      background-color: red;
+      border-radius: 30%;
+      font-size: 0.5rem;
+    }
+  }
+}

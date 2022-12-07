@@ -1,11 +1,11 @@
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 main .heading {
-  padding: 1em;
+  padding: 2em 0;
   margin-top: 3em;
   background-image: url("../images/pattern-circles.svg");
   background-repeat: no-repeat;
@@ -31,7 +31,88 @@ main .heading p {
 }
 
 section {
-  background-color: hsl(227deg, 35%, 25%);
+  width: 100%;
+  height: auto;
+  margin-top: 3.5em;
+  border-radius: 12px;
+  box-shadow: 0.25px 0.25px 4px rgba(63, 63, 63, 0.39);
+  background-color: hsl(0deg, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3em;
+}
+section p {
+  text-transform: uppercase;
+}
+section .wrap {
+  display: flex;
+}
+section .wrap h2 {
+  font-size: 2.2rem;
+  color: hsl(227deg, 35%, 25%);
+  font-weight: 700;
+}
+section .wrap span {
+  margin-left: 1em;
+  align-self: center;
+  color: hsl(225deg, 20%, 60%);
+  font-size: 1.1rem;
+}
+section .subscription-plan {
+  display: flex;
+  padding: 2em 0;
+}
+section .subscription-plan p {
+  font-size: 0.87rem;
+}
+section .subscription-plan i {
+  align-self: center;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  cursor: pointer;
+  color: hsl(225deg, 20%, 60%);
+}
+section .subscription-plan span {
+  background-color: red;
+  border-radius: 30%;
+  font-size: 0.5rem;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 80%;
+  height: 7px;
+  background: hsl(174deg, 77%, 80%);
+  border-radius: 5px;
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: hsl(174deg, 86%, 45%);
+  background-image: url("../images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+  padding: 0.5em 2em;
 }
 
 * {
@@ -44,11 +125,14 @@ section {
 
 body {
   min-height: 100vh;
-  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: hsl(230deg, 100%, 99%);
   background-image: url("../images/bg-pattern.svg");
   background-size: 100% 50%;
   background-repeat: no-repeat;
+  padding: 1em;
 }
 
 h1 {

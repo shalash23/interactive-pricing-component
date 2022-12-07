@@ -1,7 +1,8 @@
 @import "./variables";
 @import "./mixins";
 @import "./main";
-
+@import "./section";
+@import "./range";
 * {
   margin: 0;
   padding: 0;
@@ -13,11 +14,15 @@
 
 body {
   min-height: 100vh;
-  width: auto;
+  //   max-width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $veryPaleBlue;
   background-image: url("../images/bg-pattern.svg");
   background-size: 100% 50%;
   background-repeat: no-repeat;
+  padding: 1em;
   //   background-attachment: fixed;
 }
 

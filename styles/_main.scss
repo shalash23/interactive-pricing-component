@@ -3,11 +3,11 @@
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   .heading {
-    padding: 1em;
+    padding: 2em 0;
     margin-top: 3em;
     background-image: url("../images/pattern-circles.svg");
     background-repeat: no-repeat;
@@ -31,9 +31,4 @@ main {
       }
     }
   }
-}
-
-section {
-  //   padding: 15em;
-  background-color: $desaturabtedBlue;
 }
