@@ -1,7 +1,45 @@
+main {
+  min-height: 100vh;
+  background-image: url("../images/bg-pattern.svg");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(230deg, 100%, 99%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.3233082707rem + 0.7518796992vw, 2rem);
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-size: clamp(1.3rem, 1.1233082707rem + 0.7518796992vw, 1.8rem);
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 1.0586466165rem + 0.6015037594vw, 1.6rem);
+}
+
+p {
+  font-size: 0.95rem;
+  font-size: clamp(0.95rem, 0.8015789474rem + 0.6315789474vw, 1.37rem);
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228deg, 45%, 44%);
 }/*# sourceMappingURL=styles.css.map */
