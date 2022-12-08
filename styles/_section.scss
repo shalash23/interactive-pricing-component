@@ -90,7 +90,7 @@ section {
   section {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, auto);
-    min-width: 45em;
+    width: max(35em, 40em);
     min-height: 24em;
 
     .wrap {
