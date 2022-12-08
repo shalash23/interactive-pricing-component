@@ -1,7 +1,7 @@
 section {
   //   padding: 15em 5em;
   width: 100%;
-  height: auto;
+  min-height: 40em;
   margin-top: 3.5em;
   border-radius: 12px;
   box-shadow: 0.25px 0.25px 4px rgba(63, 63, 63, 0.39);
@@ -9,8 +9,8 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  gap: 3em;
+  justify-content: space-evenly;
+  // gap: 3em;
 
   p {
     text-transform: uppercase;
@@ -34,9 +34,10 @@ section {
 
   .subscription-plan {
     display: flex;
-    padding: 2em 0;
+    // padding: 0.5em 0;
     p {
       font-size: 0.87rem;
+      text-transform: capitalize;
     }
     i {
       //   padding: 2em;
@@ -47,9 +48,11 @@ section {
       color: $grayishBlue;
     }
     span {
-      background-color: red;
+      background-color: $lightRed;
       border-radius: 30%;
-      font-size: 0.5rem;
+      font-size: 0.65rem;
+      padding: 0 0.3em;
+      margin-left: 0.5em;
     }
   }
 }

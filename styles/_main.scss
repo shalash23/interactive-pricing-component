@@ -8,7 +8,8 @@ main {
 
   .heading {
     padding: 2em 0;
-    margin-top: 3em;
+
+    margin-top: 2em;
     background-image: url("../images/pattern-circles.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -29,6 +30,11 @@ main {
       p {
         width: auto;
       }
+    }
+  }
+  @include media(670px) {
+    .heading {
+      padding: 3em;
     }
   }
 }

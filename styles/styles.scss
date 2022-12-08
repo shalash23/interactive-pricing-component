@@ -17,7 +17,7 @@ body {
   //   max-width: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-color: $veryPaleBlue;
   background-image: url("../images/bg-pattern.svg");
   background-size: 100% 50%;
@@ -65,10 +65,15 @@ h3 {
   );
 }
 
-p {
+p,
+li {
   font-size: 0.94rem;
   font-size: clamp(0.94rem, 0.918796992481203rem + 0.09022556390977451vw, 1rem);
   color: $grayishBlue;
+}
+
+hr {
+  width: 100%;
 }
 
 // Foooter
