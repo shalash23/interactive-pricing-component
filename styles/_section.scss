@@ -64,8 +64,13 @@ section {
       padding: 0 0.6em;
       margin-left: 0.5em;
       color: $lightRed;
+      align-self: center;
+      justify-self: center;
     }
   }
+}
+.discount {
+  display: none;
 }
 
 .final-wrap {
@@ -108,6 +113,13 @@ section {
   }
 
   button {
+    margin: auto;
     margin-right: 2em;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .discount {
+    display: inline-block;
   }
 }

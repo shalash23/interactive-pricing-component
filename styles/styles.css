@@ -90,6 +90,12 @@ section .subscription-plan span {
   padding: 0 0.6em;
   margin-left: 0.5em;
   color: hsl(15deg, 100%, 70%);
+  align-self: center;
+  justify-self: center;
+}
+
+.discount {
+  display: none;
 }
 
 .final-wrap {
@@ -127,7 +133,13 @@ section .subscription-plan span {
     justify-content: space-around;
   }
   button {
+    margin: auto;
     margin-right: 2em;
+    align-self: center;
+    justify-self: center;
+  }
+  .discount {
+    display: inline-block;
   }
 }
 input[type=range] {
