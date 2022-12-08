@@ -43,10 +43,10 @@ section {
   justify-items: center;
   align-items: center;
   width: 100%;
-  min-height: 40em;
+  min-height: 34em;
   margin-top: 3.5em;
   border-radius: 12px;
-  box-shadow: 0.25px 0.25px 4px rgba(63, 63, 63, 0.39);
+  box-shadow: 0.25px 0 4px rgba(63, 63, 63, 0.39);
   background-color: hsl(0deg, 0%, 100%);
 }
 section p {
@@ -92,6 +92,44 @@ section .subscription-plan span {
   color: hsl(15deg, 100%, 70%);
 }
 
+.final-wrap {
+  border-top: 1px solid hsl(225deg, 20%, 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+}
+
+@media screen and (min-width: 861px) {
+  section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    min-width: 45em;
+    min-height: 24em;
+  }
+  section .wrap {
+    grid-column: 2;
+  }
+  section input {
+    grid-column: span 2;
+    grid-row: 2;
+  }
+  section .subscription-plan {
+    grid-column: span 2;
+    grid-row: 3;
+  }
+  .final-wrap {
+    grid-row: 4;
+    grid-column: span 2;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  button {
+    margin-right: 2em;
+  }
+}
 input[type=range] {
   -webkit-appearance: none;
   margin-right: 15px;
@@ -181,7 +219,6 @@ hr {
 }
 
 ul {
-  border-top: 1px solid hsl(225deg, 20%, 60%);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -196,14 +233,21 @@ ul li::before {
   margin-right: 0.2em;
 }
 
+@media screen and (min-width: 861px) {
+  ul {
+    align-items: flex-start;
+    margin-left: 2em;
+  }
+}
 button {
+  padding: 1em 0;
   width: 80%;
-  padding: 1.5em 0;
   border-radius: 24px;
   color: hsl(226deg, 100%, 87%);
   background: #2e3960;
   border: 1px solid #232b48;
   box-shadow: 0px 2px 0 #212945, 2px 4px 6px #262f4f;
+  letter-spacing: 1px;
   transition: all 150ms linear;
   cursor: pointer;
 }
@@ -212,7 +256,6 @@ button:hover {
   background: #273051;
   border: 1px solid rgba(0, 0, 0, 0.05);
   box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
-  color: #475894;
   text-decoration: none;
   text-shadow: -1px -1px 0 #1a2035;
   transition: all 250ms linear;

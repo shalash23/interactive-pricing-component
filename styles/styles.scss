@@ -79,7 +79,6 @@ hr {
 }
 
 ul {
-  border-top: 1px solid $grayishBlue;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -97,9 +96,18 @@ ul {
   }
 }
 
+@media screen and (min-width: 861px) {
+  ul {
+    align-items: flex-start;
+    margin-left: 2em;
+  }
+}
+
 button {
+  // width: 80%;
+  padding: 1em 0;
   width: 80%;
-  padding: 1.5em 0;
+
   // border: none;
   border-radius: 24px;
   // box-shadow: 0.2px 0.2px 6px $desaturabtedBlue;
@@ -110,7 +118,7 @@ button {
   box-shadow: 0px 2px 0 darken($desaturabtedBlue, 5%),
     2px 4px 6px darken($desaturabtedBlue, 2%);
   // font-weight: 900;
-  // letter-spacing: 1px;
+  letter-spacing: 1px;
   transition: all 150ms linear;
   cursor: pointer;
   &:hover {
@@ -118,7 +126,7 @@ button {
     background: darken($desaturabtedBlue, 1.5%);
     border: 1px solid rgba(#000, 0.05);
     box-shadow: 1px 1px 2px rgba(#fff, 0.2);
-    color: lighten($desaturabtedBlue, 18%);
+    // color: lighten($desaturabtedBlue, 18%);
     text-decoration: none;
     text-shadow: -1px -1px 0 darken($desaturabtedBlue, 9.5%);
     transition: all 250ms linear;
