@@ -15,7 +15,7 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.jpeg)
 
 ### Links
 
