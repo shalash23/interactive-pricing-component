@@ -140,6 +140,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 body {
   min-height: 100vh;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -191,10 +192,19 @@ ul {
 }
 ul li::before {
   content: "✓ ";
-  color: green;
+  color: hsl(174deg, 86%, 45%);
   margin-right: 0.2em;
 }
 
+button {
+  width: 80%;
+  padding: 1.5em 0;
+  border: none;
+}
+
+footer {
+  margin-top: 1em;
+}
 footer .attribution {
   font-size: 11px;
   text-align: center;
