@@ -9,7 +9,7 @@
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
-  //   outline: 2px solid green;
+  // outline: 2px solid green;
 }
 
 body {
@@ -67,6 +67,7 @@ h3 {
 
 p,
 li {
+  padding: 0.4em 0;
   font-size: 0.94rem;
   font-size: clamp(0.94rem, 0.918796992481203rem + 0.09022556390977451vw, 1rem);
   color: $grayishBlue;
@@ -74,6 +75,25 @@ li {
 
 hr {
   width: 100%;
+}
+
+ul {
+  border-top: 1px solid $grayishBlue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding-top: 1em;
+
+  li {
+    &::before {
+      content: "\2713\0020";
+      color: green;
+      margin-right: 0.2em;
+    }
+  }
 }
 
 // Foooter

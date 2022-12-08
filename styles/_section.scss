@@ -1,4 +1,9 @@
 section {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
   //   padding: 15em 5em;
   width: 100%;
   min-height: 40em;
@@ -6,10 +11,10 @@ section {
   border-radius: 12px;
   box-shadow: 0.25px 0.25px 4px rgba(63, 63, 63, 0.39);
   background-color: $white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: space-evenly;
   // gap: 3em;
 
   p {
@@ -33,7 +38,12 @@ section {
   }
 
   .subscription-plan {
+    // outline: 2px solid red;
     display: flex;
+    width: 80%;
+    justify-content: center;
+    // gap: 0.5em;
+    align-items: center;
     // padding: 0.5em 0;
     p {
       font-size: 0.87rem;
@@ -48,11 +58,12 @@ section {
       color: $grayishBlue;
     }
     span {
-      background-color: $lightRed;
-      border-radius: 30%;
+      background-color: $lightGrayishRed;
+      border-radius: 35%;
       font-size: 0.65rem;
-      padding: 0 0.3em;
+      padding: 0 0.6em;
       margin-left: 0.5em;
+      color: $lightRed;
     }
   }
 }
