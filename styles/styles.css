@@ -60,6 +60,9 @@ section .wrap h2 {
   color: hsl(227deg, 35%, 25%);
   font-weight: 700;
 }
+section .wrap h2::before {
+  content: "$";
+}
 section .wrap span {
   margin-left: 1em;
   align-self: center;
@@ -166,7 +169,6 @@ input[type=range]::-webkit-slider-thumb {
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
-  cursor: ew-resize;
   box-shadow: 0 0 2px 0 #555;
   -webkit-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;

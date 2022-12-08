@@ -28,6 +28,9 @@ section {
       //   color: hsl(227, 53%, 34%);
       color: $desaturabtedBlue;
       font-weight: 700;
+      &::before {
+        content: "$";
+      }
     }
     span {
       margin-left: 1em;
